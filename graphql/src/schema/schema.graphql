@@ -1,8 +1,8 @@
 type Query {
   helloWorld: String!
-  getWallet(id: ID!): Wallet!
+  getWallet(id: ID!): Wallet
   listWallet: [Wallet]
-  getQuotation(id: ID!): Quotation!
+  getQuotation(): Quotation!
   listQuotation: [Quotation]
 }
 
@@ -13,7 +13,6 @@ type Wallet {
 }
 
 type Quotation {
-  id: ID!
   coin: String!
   price: Float!
   date: String!
